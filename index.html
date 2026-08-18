@@ -56,6 +56,7 @@
     max-width:13rem;
     aspect-ratio:4/5;
     object-fit:cover;
+    object-position:50% 12%;
     display:block;
     background:#F2F1EE;
     border-bottom:3px solid var(--red);
@@ -82,14 +83,6 @@
   .bio{max-width:58ch;}
   .bio p{margin:0 0 1rem;}
   .bio p:last-child{margin-bottom:0;}
-
-  .agenda{
-    margin-top:1.25rem !important;
-    padding-left:1.1rem;
-    border-left:2px solid var(--red);
-    font-style:italic;
-    color:#33332F;
-  }
 
   /* ---------- links row ---------- */
   .links{
@@ -209,8 +202,9 @@
 <body>
 
 <header class="head">
-  <!-- Save your photo as photo.jpg next to this file (portrait crop, ~600×750px or larger) -->
-  <img class="portrait" src="photo.jpg" alt="Daria Demyanova">
+  <!-- photo.png must sit in the same folder as this file -->
+  <img class="portrait" src="photo.png" alt="Daria Demyanova"
+       onerror="this.onerror=null;this.src='photo.jpg';">
 
   <div>
     <h1>Daria Demyanova</h1>
@@ -221,20 +215,16 @@
 
     <div class="bio">
       <p>
-        I'm a Ph.D. candidate in Management at the University of Bologna, currently a visiting
-        researcher at IE Business School in Madrid.
+        I'm a Ph.D. candidate in Management at the University of Bologna.
       </p>
       <p>
-        I study complementors — the third-party actors that build on platforms and co-create
-        value in their ecosystems — as strategic agents rather than passive followers. My work
-        asks how they choose which platform to commit to, when to add a second, and how far
-        they scale once the technology underneath the market shifts. Three papers take up those
-        decisions in turn: the institutional logics behind platform selection, the timing of
-        expansion during a technological transition, and cross-border growth after a shock.
-      </p>
-      <p class="agenda">
-        The question underneath all of it: how complementors' own strategies shape both their
-        position in an ecosystem and the way that ecosystem evolves.
+        My research focuses on how complementors &ndash; third-party actors that co-create value
+        in platform ecosystems &ndash; choose, time, and scale their platform commitments under
+        various institutional and technological conditions. Across three papers of my
+        dissertation, I study the institutional logics behind platform selection, the timing of
+        complementors&rsquo; expansion during technological transitions, and their cross-border
+        scaling after technological shocks, reframing complementors as strategic agents who
+        shape ecosystem evolution.
       </p>
     </div>
 
@@ -242,8 +232,7 @@
       <!-- Save your CV as cv.pdf next to this file -->
       <a class="cv" href="cv.pdf" download>Download CV (PDF)</a>
       <a href="mailto:daria.demyanova2@unibo.it">daria.demyanova2@unibo.it</a>
-      <!-- Replace # with your unibo.it personal page -->
-      <a href="#">University page</a>
+      <a href="https://www.unibo.it/sitoweb/daria.demyanova2">University page</a>
     </p>
   </div>
 </header>
@@ -251,12 +240,9 @@
 <section>
   <h2>Keywords</h2>
   <ul class="keywords">
-    <li>Platform strategy</li>
-    <li>Complementor strategy</li>
-    <li>Multihoming</li>
-    <li>Technological transitions</li>
-    <li>Institutional logics</li>
-    <li>Ecosystem evolution</li>
+    <li>Complementors&rsquo; strategy</li>
+    <li>Platform ecosystems</li>
+    <li>Complementors&rsquo; platform engagement</li>
   </ul>
 </section>
 
